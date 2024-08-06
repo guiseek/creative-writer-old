@@ -1,0 +1,26 @@
+{
+  "name": "creative-writer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "sort-scss": "postcss --config scss ./src/scss/**/*.scss --replace",
+    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules/@picocss/pico/scss/ src/scss/:public/css/",
+    "css-prefix": "postcss --replace public/css/main.css --use autoprefixer --map"
+  },
+  "devDependencies": {
+    "@picocss/pico": "^2.0.6",
+    "sass": "^1.77.8",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "dependencies": {
+    "@jsxml/parser": "^0.0.1",
+    "@websqnl/data-store": "link:../local-store/dist",
+    "@websqnl/di": "link:../../websqnl/di/dist"
+  }
+}

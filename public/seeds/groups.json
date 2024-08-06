@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c7691056-ee6c-4845-b144-8e16be29bb7d",
+    "logo": "logos/admin.svg",
+    "name": "Organização"
+  },
+  {
+    "id": "e3b93bf8-ad56-4cba-b31c-41f2b14abbce",
+    "logo": "logos/agile.svg",
+    "name": "Agile"
+  },
+  {
+    "id": "8a1f1d1a-b9a4-4d2f-95d5-9ea8ebcaa7bf",
+    "logo": "logos/curitiba.svg",
+    "name": "Curitiba"
+  },
+  {
+    "id": "3143941e-b141-4c72-b780-dd8258b1fbdd",
+    "logo": "logos/delphi.svg",
+    "name": "Delphi"
+  },
+  {
+    "id": "4a95b620-57ff-4a1d-8db1-094882072796",
+    "logo": "logos/geral.svg",
+    "name": "Geral"
+  },
+  {
+    "id": "6f54b50d-2140-4442-9b6f-e8ee419c3acc",
+    "logo": "logos/nodejs.svg",
+    "name": "NodeJS"
+  },
+  {
+    "id": "4af9fbf1-a8e4-46f1-b152-7a4ce1804346",
+    "logo": "logos/php.svg",
+    "name": "PHP"
+  },
+  {
+    "id": "61dca7cd-0cb3-44ed-8d99-4cbcaca2764d",
+    "logo": "logos/rust.svg",
+    "name": "Rust"
+  },
+  {
+    "id": "4f52db5f-c5f1-405c-a4b0-c6546829448b",
+    "logo": "logos/ts.svg",
+    "name": "TypeScript"
+  },
+  {
+    "id": "9b445bce-778d-4047-aa32-057f62797f1a",
+    "logo": "logos/vagas.svg",
+    "name": "Vagas"
+  }
+]

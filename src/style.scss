@@ -1,0 +1,94 @@
+@use '@picocss/pico';
+@use './scss/fonts';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 64px;
+
+    form {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+    }
+  }
+  canvas {
+    width: 540px;
+    height: 540px;
+  }
+
+  footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  app-root {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    > button.theme-toggle {
+      border-radius: 50%;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      &:active,
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  [type='checkbox']:checked,
+  [type='checkbox']:checked:active,
+  [type='checkbox']:checked:focus,
+  [type='radio']:checked,
+  [type='radio']:checked:active,
+  [type='radio']:checked:focus {
+    --pico-background-color: #39d353;
+    --pico-border-color: #4be260;
+    --pico-color: #070809;
+  }
+
+  [role='button'],
+  [type='button'],
+  [type='file']::file-selector-button,
+  [type='reset'],
+  [type='submit'],
+  button {
+    --pico-background-color: #2ecb4c;
+    --pico-border-color: #4be260;
+    --pico-color: #070809;
+  }
+}
+
+html > body app-root {
+  --pico-color: #62f772;
+  --pico-primary: #39d353;
+  --pico-primary-hover-background: #2ecb4c;
+  --pico-background-color: #2ecb4c;
+  --background-color: var(--pico-background-color);
+  --pico-switch-checked-background-color: var(--pico-background-color);
+  --pico-primary-hover-border: var(--pico-background-color);
+  --pico-border-color: #070809;
+  --secondary: #ç;
+  --pico-spacing: 0.8em;
+  --pico-form-element-spacing-vertical: 0.33em;
+}
