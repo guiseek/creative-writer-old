@@ -1,8 +1,6 @@
 import {PresentationDialogProps} from './presentation-dialog.attrs'
 import {formValue, readDataFile} from '@base/utils/parsers'
 import {Callback, DataFile} from '../../../interfaces'
-import {useRef} from '@jsxml/parser'
-import {Presentation} from '@renderers/presentation-group'
 
 interface PresentationPhotoFile {
   title: string
@@ -11,37 +9,9 @@ interface PresentationPhotoFile {
   role: string
 }
 
-type FormGroupl<T> = {
-  [K in keyof T]: HTMLInputElement
-}
-
-let INC = 0
-
 export const PresentationDialogTmpl = (attrs: PresentationDialogProps) => {
   const image = new Image(128, 128)
   const caption = new Text()
-
-  const formRef = useRef<HTMLFormElement>()
-
-  queueMicrotask(() => {
-    Object.assign(formRef.current(), {
-      title: 'Desafios Práticos de Escalar Times de Plataforma',
-      name: 'Mario Souto',
-      role: 'Lead Software Engineer',
-    })
-
-    const form = formRef.current<FormGroupl<Presentation>>()
-
-    if (INC++ === 1) {
-      form.title.value = 'Desafios Práticos de Escalar Times de Plataforma'
-      form.name.value = 'Mario Souto'
-      form.role.value = 'Lead Software Engineer'
-    } else {
-      form.title.value = 'A batalha da Escalabilidade'
-      form.name.value = 'Ana Neri'
-      form.role.value = 'Senior Software Engineer'
-    }
-  })
 
   const onCancel = () => {
     attrs.onCancel()
@@ -76,7 +46,7 @@ export const PresentationDialogTmpl = (attrs: PresentationDialogProps) => {
   }
 
   return (
-    <form ref={formRef} noValidate id="createPresentation" onSubmit={onSubmit}>
+    <form noValidate id="createPresentation" onSubmit={onSubmit}>
       <article>
         <h2>Presentation</h2>
 
