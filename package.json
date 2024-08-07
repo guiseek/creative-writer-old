@@ -18,6 +18,6 @@
     "@jsxml/parser": "^0.0.1",
     "@picocss/pico": "^2.0.6",
     "@websqnl/data-store": "^0.0.1",
-    "@websqnl/di": "^0.0.3"
+    "@websqnl/di": "^0.0.4"
   }
 }

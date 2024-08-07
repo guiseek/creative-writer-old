@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.0.1
     version: 0.0.1
   '@websqnl/di':
-    specifier: ^0.0.3
-    version: 0.0.3
+    specifier: ^0.0.4
+    version: 0.0.4
 
 devDependencies:
   sass:
@@ -386,8 +386,8 @@ packages:
     resolution: {integrity: sha512-TYamU7UiSJ20GyoGHC5ssXaepidQQUJwZsEF/2zRVAVVLxUnUiQEAi5oIfIcWEbN2i/c3vPlsIDJO8DTvhgSJA==}
     dev: false
 
-  /@websqnl/di@0.0.3:
-    resolution: {integrity: sha512-dRGpxZMCD2albc92d/9rcRHNxpJKLGdg02QYKbkvBDGWx8aXoEm8B74KSe9sgqlI2DbQPA2bboXN0WzyyiBvww==}
+  /@websqnl/di@0.0.4:
+    resolution: {integrity: sha512-xhtbgKdU/SX9POnzp4qgoqU76dkx3i+9roX6cxpmXbspMThdlRM4yz0yS8jUBr/p1bm76shyMTYBMho85tT2kg==}
     dev: false
 
   /anymatch@3.1.3:
